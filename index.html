@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reveal the Picture</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="GameContainer">
+        <div class="vertical-side-control">
+          <button class="toggle-music">toggle music</button>
+          <button class="toggle-fullscreen" id="fullscreenBtn">
+            toggle full-size
+          </button>
+        </div>
+        <div class="guess-image-container">
+          <canvas id="resized"> </canvas>
+          <div id="overlay"></div>
+        </div>
+        <div class="answerContainer" id="answer">
+          <p>It's an Icecream</p>
+          <div class="answerCover"></div>
+        </div>
+      </div>
+      <div class="attribution" id="attribution">
+        <a href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/">Background SVG source</a>
+      </div>
+    </div>
+
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
