@@ -5,7 +5,7 @@ import {
   createGridItems,
   resizeImage,
   handleEscapePress,
-} from './clickFadeOut';
+} from './clickFadeOut.ts';
 
 createGridItems(25);
 handleEscapePress();

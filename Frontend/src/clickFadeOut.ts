@@ -29,7 +29,7 @@ export function handleEscapePress(): void {
   if (document.fullscreenElement) {
     return;
   } else {
-    imageCanvas.style.width = '50rem';
+    imageCanvas.style.width = '100%';
   }
 }
 
@@ -41,7 +41,7 @@ export function ToggleFullScreen(): void {
   ) as HTMLElement;
 
   if (!document.fullscreenElement) {
-    imageCanvas.style.width = '79rem';
+    imageCanvas.style.width = '88rem';
     attributionElement.style.display = 'none';
     appElement?.requestFullscreen().catch((err) => {
       console.error(
@@ -55,7 +55,7 @@ export function ToggleFullScreen(): void {
     }
   } else {
     document.exitFullscreen();
-    imageCanvas.style.width = '50rem';
+    imageCanvas.style.width = '100%';
     attributionElement.style.display = 'block';
     attributionElement.style.width = 'fit-content';
   }
