@@ -1,4 +1,4 @@
-import '/src/style.css';
+import '../styles/style.css';
 import {
   clickFadeOut,
   ToggleFullScreen,

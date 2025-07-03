@@ -8,7 +8,7 @@ body {
   align-items: center;
   align-content: center;
   box-sizing: border-box;
-  background-image: url('./src/assets/backgroundPatternDarkBlue.svg');
+  background-image: url('../assets/backgroundPatternDarkBlue.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -26,7 +26,6 @@ body {
 }
 
 #container {
-  border: solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,7 +55,7 @@ body {
   top: 0;
   left: 0;
   width: 93.5%;
-  height: 90%;
+  height: 91%;
   display: grid;
   grid-template-columns: repeat(5, 1.55fr);
   grid-template-rows: repeat(5, 1.5fr);
@@ -73,6 +72,9 @@ body {
   cursor: pointer;
   transition: opacity 0.5s;
   transition: opacity 2s;
+}
+.gridItem:first-child {
+  border-radius: 2rem 0 0 0;
 }
 
 .fade {
@@ -112,12 +114,11 @@ p {
   width: 60rem; /* Fixed width */
   height: 40rem; /* Fixed height */
   border: solid black 3px;
-  
+  border-radius: 2rem;
 }
 .guess-image-container {
   width: 100%;
   height: 100%;
-  background-color: black;
   grid-column: 1 / span 5;
   grid-row: 1 / span 5;
 }
@@ -129,11 +130,13 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 2rem 0 0 0;
 }
 .answerContainer {
   position: relative;
   grid-column: 1 / span 5;
   grid-row: 6;
+  border-radius: 0 0 0 1.8rem;
 }
 
 .answerCover {
@@ -146,6 +149,7 @@ p {
   cursor: pointer;
   transition: opacity 0.5s;
   transition: opacity 2s;
+  border-radius: 0 0 0 1.8rem;
 }
 
 .game-content-container {
@@ -161,6 +165,7 @@ p {
   grid-template-columns: 1;
   grid-template-rows: 2rem 2rem 2rem 2rem 2rem 2rem;
   gap: 2rem;
+  border-radius: 0 1.75rem 1.75rem 0;
 }
 
 .toggle-music {
