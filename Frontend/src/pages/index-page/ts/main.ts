@@ -21,7 +21,7 @@ resizeImage(
   'https://joyfoodsunshine.com/wp-content/uploads/2022/10/best-hamburger-recipe-11.jpg'
 );
 clickFadeOut('.gridItem');
-clickFadeOut('.answerCover');
+clickFadeOut('.answer-cover');
 const fullscreenButton = document.getElementById('fullscreenBtn');
 if (fullscreenButton) {
   fullscreenButton.addEventListener('click', ToggleFullScreen);

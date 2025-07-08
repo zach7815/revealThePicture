@@ -139,7 +139,7 @@ p {
   border-radius: 0 0 0 1.8rem;
 }
 
-.answerCover {
+.answer-cover {
   background-color: blue;
   position: absolute;
   z-index: 100;

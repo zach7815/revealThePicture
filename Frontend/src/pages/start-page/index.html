@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Start Page - Guess The Picture</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="form-page-container">
-        <div class="left-side-bar"></div>
-        <div class="left-add-slide-control"></div>
-        <div class="top-bar">
-            <button>All Done</button>
-            <a href="../index-page/index.html">Go to Index Page</a>
+      <div class="left-side-bar"></div>
+      <div class="left-add-slide-control"></div>
+      <div class="top-bar">
+        <button>All Done</button>
+        <a href="../index-page/index.html">Go to Index Page</a>
+      </div>
+      <div class="preview-outer-container">
+        <div class="preview-inner-container">
+          <div class="image-container">
+            <canvas id="resized"> </canvas>
+            <div class="overlay" id="overlay"></div>
+          </div>
+
+          <div class="answer">
+            <div class="answer-cover"></div>
+          </div>
+          <div class="right-side-controls"></div>
         </div>
-        <div class="preview-container">
-            <div class="image-container"><img src="" alt="" /></div>
-            <div class="answer"></div>
-            <div class="preview-right-side-controls"></div>
-        </div>
+      </div>
     </div>
     <form></form>
-</body>
+    <script type="module" src="./ts/gameFuncts.ts"></script>
+  </body>
 </html>
