@@ -14,6 +14,8 @@ body {
   border: solid lightblue 2px;
   grid-row: 1;
   grid-column: 2;
+  display: flex;
+  justify-content: flex-end;
 }
 .left-add-slide-control {
   border: lightpink solid 2px;
@@ -30,6 +32,7 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
+  background-color: #fdfafa;
 }
 
 .preview-inner-container {
@@ -106,4 +109,59 @@ body {
 .fade {
   opacity: 0;
   cursor: auto;
+}
+
+.submit-button {
+  background-color: #086098;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.75rem 0.5rem 0.5rem 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  height: fit-content;
+  margin: 1rem;
+}
+
+.styled-item {
+  height: fit-content;
+  width: 100%;
+  background-color: #dedee1;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 0.5fr;
+}
+.styled-item-btn {
+  height: fit-content;
+  width: fit-content;
+  border: none;
+  background-color: transparent;
+}
+.styled-item-btn:hover {
+  cursor: pointer;
+}
+.svg-btn :hover{
+  fill: #086098;
+}
+
+.mini-image {
+  height: 52px;
+  width: 52px;
+  border: solid black 1px;
+  border-radius: 3px;
+  margin: 1rem;
+}
+
+.styled-item-btn-container {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+.styled-item-btn:first-of-type {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.styled-item-btn:last-of-type {
+  grid-column: 3;
+  grid-row: 2;
 }
