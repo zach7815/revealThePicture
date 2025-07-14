@@ -121,6 +121,11 @@ body {
   height: fit-content;
   margin: 1rem;
 }
+.slides-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
 
 .styled-item {
   height: fit-content;
@@ -129,6 +134,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr;
   grid-template-rows: 0.5fr;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.styled-item:first-of-type{
+  margin-top: 0.2rem;
 }
 .styled-item-btn {
   height: fit-content;
@@ -139,8 +152,9 @@ body {
 .styled-item-btn:hover {
   cursor: pointer;
 }
-.svg-btn :hover{
-  fill: #086098;
+.svg-btn:hover path {
+  stroke: #086098;
+  stroke-width: 2;
 }
 
 .mini-image {
@@ -153,15 +167,4 @@ body {
 
 .styled-item-btn-container {
   display: flex;
-  gap: 1rem;
-  margin: 1rem;
-}
-.styled-item-btn:first-of-type {
-  grid-row: 1;
-  grid-column: 3;
-}
-
-.styled-item-btn:last-of-type {
-  grid-column: 3;
-  grid-row: 2;
 }
